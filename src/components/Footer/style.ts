@@ -1,14 +1,13 @@
 import styled from "styled-components";
 import { font } from "../../styles/font";
 import color from "../../styles/color";
+import flex from "../../styles/flex";
 
 export const FooterLayout = styled.div`
+  ${flex.CENTER};
   width: 100%;
   height: 400px;
   color: ${color.content};
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: ${color.tertiary};
 `;
 
@@ -18,8 +17,7 @@ export const FooterContainer = styled.div`
 `;
 
 export const FooterInfoBox = styled.footer`
-  display: flex;
-  flex-direction: column;
+  ${flex.COLUMN};
 `;
 
 export const FooterTitle = styled.span`
@@ -30,13 +28,11 @@ export const FooterHGroup = styled.hgroup`
   border-bottom: 1px solid ${color.content};
   padding-bottom: 2%;
   margin-bottom: 2%;
-  display: flex;
-  flex-direction: column;
+  ${flex.COLUMN};
 `;
 
 export const FooterSection = styled.section`
-  display: flex;
-  flex-direction: column;
+  ${flex.COLUMN};
   gap: 2px;
 `;
 
