@@ -5,11 +5,14 @@ import color from "../../styles/color";
 export const FooterLayout = styled.div`
   width: 100%;
   height: 400px;
-  color: ${color.content};
+  color: ${color.tertiary};
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ${color.tertiary};
+`;
+
+export const FooterHr = styled.div`
+  border-bottom: 10px solid ${color.tertiary};
 `;
 
 export const FooterContainer = styled.div`
@@ -27,7 +30,7 @@ export const FooterTitle = styled.span`
 `;
 
 export const FooterHGroup = styled.hgroup`
-  border-bottom: 1px solid ${color.content};
+  border-bottom: 1px solid ${color.tertiary};
   padding-bottom: 2%;
   margin-bottom: 2%;
   display: flex;
@@ -47,13 +50,13 @@ export const FooterSubTitle = styled.span`
 
 export const FooterPolicyText = styled.span`
   ${font.p4};
-  color: ${color.content};
+  color: ${color.tertiary};
 `;
 
 export const FooterCopyright = styled.span`
   margin-top: 4%;
   ${font.p4};
-  color: ${color.content};
+  color: ${color.tertiary};
 `;
 
 export const QRCode = styled.img`

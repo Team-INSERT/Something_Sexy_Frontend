@@ -5,14 +5,15 @@ function Footer() {
     name: "INSERT",
     headline: "이용약관 | 개인정보처리방침",
     service: "BSSM HR Management Team",
-    serviceInfo: `Team.INSERT | 대표 : 이현준 | 부산광역시 강서구 가락대로 1393`,
-    policy: "개인정보책임관리자 : 김호현 | 소개 사이트 : insert.com",
+    serviceInfo: `부산소마고학생정보관리시스템 | 대표 : 홍지민 | 부산광역시 가락대로 1393`,
+    policy: "개인정보책임관리자 : 전영현 | 소개 사이트 : insert.com",
     inquery: "비즈니스 문의 : insert@gmail.com",
     copyRight: "© 2023. team insert. All rights reserved.",
   };
 
   return (
     <S.FooterLayout>
+      <S.FooterHr />
       <S.FooterContainer>
         <S.FooterInfoBox>
           <S.FooterHGroup>
