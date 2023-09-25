@@ -41,7 +41,7 @@ export const Input = styled.input`
 
 export const Button = styled.button`
   margin-left: 10%;
-  width: 40%;
+  width: 35%;
   background: #4541ff;
   height: 110%;
   border: none;
