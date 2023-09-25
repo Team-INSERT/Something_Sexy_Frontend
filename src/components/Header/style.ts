@@ -39,7 +39,18 @@ export const Input = styled.input`
   flex-shrink: 0;
 `;
 
-export const Button = styled.img`
-  width: 30%;
+export const Button = styled.button`
   margin-left: 10%;
+  width: 40%;
+  background: #4541ff;
+  height: 110%;
+  border: none;
+  flex-shrink: 0;
+  border-radius: 12.5px;
+  color: #fff;
+  font-family: Pretendard;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 `;

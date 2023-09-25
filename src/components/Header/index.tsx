@@ -11,7 +11,7 @@ function Header() {
       </S.HeaderLayoutLeftBox>
       <S.HeaderLayoutRightBox>
         <S.Input type="search" name="search" placeholder="검색하기..." />
-        <S.Button src={login} />
+        <S.Button>로그인</S.Button>
       </S.HeaderLayoutRightBox>
     </S.HeaderLayout>
   );
