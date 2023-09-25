@@ -34,7 +34,7 @@ export const HeaderLayoutRightBox = styled.div`
 
 export const Input = styled.input`
   border-radius: 70px;
-  width: 130px;
+  width: 60%;
   padding: 3.5%;
   flex-shrink: 0;
 `;
