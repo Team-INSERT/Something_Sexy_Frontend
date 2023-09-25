@@ -22,7 +22,7 @@ export const font = {
   H5: fontGenerator(600, 1.125, 140, 0.15),
   H6: fontGenerator(600, 1, 140, 0.15),
 
-  p1: fontGenerator(400, 1.125, 140, 0.15),
+  p1: fontGenerator(400, 1.3, 140, 0.15),
   p2: fontGenerator(400, 1, 160, -0.15),
   p3: fontGenerator(400, 0.875, 160, -0.1),
   p4: fontGenerator(400, 0.625, 160, -0.1),

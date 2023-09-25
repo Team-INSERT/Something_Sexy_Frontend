@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import color from "../../styles/color";
 import flex from "../../styles/flex";
+import { font } from "../../styles/font";
 
 export const HeaderLayout = styled.div`
   margin: 1% 0 0 15%;
@@ -21,16 +22,14 @@ export const Title = styled.div`
   color: #12182b;
   font-family: Pretendard;
   color: ${color.black};
-  font-size: 23px;
-  font-style: normal;
-  font-weight: 600;
+  font: ${font.H4}
   line-height: normal;
   margin-left: 5%;
 `;
 
 export const HeaderLayoutRightBox = styled.div`
   display: flex;
-  margin-left: 55%;
+  margin-left: 60%;
 `;
 
 export const Input = styled.input`
