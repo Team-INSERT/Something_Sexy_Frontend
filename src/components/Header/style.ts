@@ -3,7 +3,8 @@ import color from "../../styles/color";
 import flex from "../../styles/flex";
 
 export const HeaderLayout = styled.div`
-  margin: 2% 0 0 15%;
+  margin: 1% 0 0 15%;
+  padding-bottom: 1%;
   display: flex;
 `;
 
