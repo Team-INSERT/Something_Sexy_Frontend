@@ -1,8 +1,7 @@
 import * as S from "./style";
 
 function Footer() {
-  const { name, service, headline, serviceInfo, policy, inquery, copyRight } = {
-    name: "INSERT",
+  const { service, headline, serviceInfo, policy, inquery, copyRight } = {
     headline: "이용약관 | 개인정보처리방침",
     service: "BSSM HR Management Team",
     serviceInfo: `Team.INSERT | 대표 : 이현준 | 부산광역시 강서구 가락대로 1393`,
@@ -16,7 +15,6 @@ function Footer() {
       <S.FooterContainer>
         <S.FooterInfoBox>
           <S.FooterHGroup>
-            <S.FooterTitle>{name}</S.FooterTitle>
             <S.FooterSubTitle>{service}</S.FooterSubTitle>
             <S.FooterPolicyText>{headline}</S.FooterPolicyText>
           </S.FooterHGroup>

@@ -7,8 +7,7 @@ export const FooterLayout = styled.div`
   ${flex.CENTER};
   width: 100%;
   height: 400px;
-  color: ${color.content};
-  background-color: ${color.tertiary};
+  color: ${color.black};
 `;
 
 export const FooterContainer = styled.div`
@@ -20,12 +19,8 @@ export const FooterInfoBox = styled.footer`
   ${flex.COLUMN};
 `;
 
-export const FooterTitle = styled.span`
-  ${font.H2};
-`;
-
 export const FooterHGroup = styled.hgroup`
-  border-bottom: 1px solid ${color.content};
+  border-bottom: 1px solid ${color.black};
   padding-bottom: 2%;
   margin-bottom: 2%;
   ${flex.COLUMN};
@@ -43,13 +38,13 @@ export const FooterSubTitle = styled.span`
 
 export const FooterPolicyText = styled.span`
   ${font.p4};
-  color: ${color.content};
+  color: ${color.black};
 `;
 
 export const FooterCopyright = styled.span`
   margin-top: 4%;
   ${font.p4};
-  color: ${color.content};
+  color: ${color.black};
 `;
 
 export const QRCode = styled.img`
