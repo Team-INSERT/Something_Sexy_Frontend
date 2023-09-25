@@ -49,7 +49,7 @@ export const Button = styled.button`
   border-radius: 12.5px;
   color: #fff;
   font-family: Pretendard;
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
