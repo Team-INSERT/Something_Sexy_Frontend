@@ -8,7 +8,7 @@ export const FooterLayout = styled.div`
   width: 100%;
   height: 400px;
   color: ${color.black};
-  background-color: #f5f5f5;
+  background-color: ${color.white};
 `;
 
 export const FooterContainer = styled.div`
