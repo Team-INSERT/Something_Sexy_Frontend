@@ -4,7 +4,7 @@ import { font } from "../../styles/font";
 import flex from "../../styles/flex";
 
 export const HomeLayout = styled.div`
-  padding: 1.8% 0 1.5% 0;
+  padding: 2.5% 0 1.3% 0;
   ${flex.CENTER};
   color: ${color.white};
   background-color: #f5f5f5;

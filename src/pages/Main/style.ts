@@ -17,7 +17,7 @@ export const MainContainer = styled.div`
 
 export const Main = styled.div`
   display: grid;
-  padding: 3% 0 0 0;
+  padding: 5% 0 5% 0;
   gap: 5% 160px;
   place-items: center;
   grid-template-columns: repeat(2, 1fr); // 반복되는 값을 자동으로
