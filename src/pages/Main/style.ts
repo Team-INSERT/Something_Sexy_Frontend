@@ -5,7 +5,6 @@ import flex from "../../styles/flex";
 
 export const MainLayout = styled.div`
   ${flex.CENTER};
-  background-color: ${color.white};
   background-color: #f5f5f5;
   padding: 0 0 5% 5%;
 `;
@@ -42,4 +41,18 @@ export const PostSubtitle = styled.div`
   ${font.H6};
   color: ${color.content};
   padding: 1% 3% 0 3%;
+`;
+
+export const PostButton = styled.button`
+  font-size: 14px;
+  ${flex.CENTER};
+  color: #7a7d85;
+  line-height: normal;
+  font-weight: 600;
+  width: 12%;
+  height: 10%;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: #eee;
+  border: none;
 `;
