@@ -5,8 +5,8 @@ import flex from "../../styles/flex";
 
 export const MainLayout = styled.div`
   ${flex.CENTER};
-  background-color: #f5f5f5;
-  padding: 0 0 5% 5%;
+  background-color: #fbfbfd;
+  padding: 0 0 5% 0;
 `;
 
 export const MainContainer = styled.div`
@@ -28,29 +28,31 @@ export const Post = styled.div`
 
 export const PostPicture = styled.img`
   border-radius: 15px;
-  width: 80%;
-  height: 70%;
+  width: 95%;
+  height: 80%;
 `;
 
 export const PostTitle = styled.div`
-  ${font.H3};
+  ${font.H2};
   padding: 2% 3% 0 3%;
 `;
 
 export const PostSubtitle = styled.div`
-  ${font.H6};
+  ${font.H5};
   color: ${color.content};
-  padding: 1% 3% 0 3%;
+  padding: 1% 3% 2% 3%;
 `;
 
 export const PostButton = styled.button`
-  font-size: 14px;
+  font-size: 13px;
   ${flex.CENTER};
   color: #7a7d85;
   line-height: normal;
   font-weight: 600;
-  width: 12%;
-  height: 10%;
+  width: 10%;
+  height: 3%;
+  padding: 1% 0 1% 0;
+  margin: 0 0 0 2.5%;
   flex-shrink: 0;
   border-radius: 50px;
   background: #eee;

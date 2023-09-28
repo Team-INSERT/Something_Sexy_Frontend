@@ -6,8 +6,7 @@ import flex from "../../styles/flex";
 export const HomeLayout = styled.div`
   padding: 2.5% 0 1.3% 0;
   ${flex.CENTER};
-  color: ${color.white};
-  background-color: #f5f5f5;
+  background-color: #fbfbfd;
 `;
 
 export const HomeLayoutBox = styled.div`
