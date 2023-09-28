@@ -22,10 +22,7 @@ export const Background = styled.div`
 export const BackgroundImg = styled.div`
   ${flex.CENTER};
   flex-shrink: 0;
-  font-family: Inter;
-  font-size: 100px;
-  font-style: normal;
-  font-weight: 700;
+  ${font.D1}
   line-height: normal;
   color: ${color.white};
   width: 850px;
