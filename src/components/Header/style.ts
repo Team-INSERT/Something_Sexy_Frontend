@@ -24,7 +24,7 @@ export const Title = styled.div`
   color: ${color.black};
   font: ${font.H4}
   line-height: normal;
-  margin-left: 5%;
+  margin-left: 8%;
 `;
 
 export const HeaderLayoutRightBox = styled.div`
@@ -34,8 +34,8 @@ export const HeaderLayoutRightBox = styled.div`
 
 export const Input = styled.input`
   border-radius: 70px;
-  width: 60%;
-  padding: 3.5%;
+  width: 50%;
+  padding: 4%;
   flex-shrink: 0;
 `;
 

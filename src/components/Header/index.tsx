@@ -1,6 +1,5 @@
 import * as S from "./style";
 import logo from "../../assets/logo.png";
-import login from "../../assets/login.png";
 
 function Header() {
   return (

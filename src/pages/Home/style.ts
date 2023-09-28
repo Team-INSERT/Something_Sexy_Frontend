@@ -4,7 +4,7 @@ import { font } from "../../styles/font";
 import flex from "../../styles/flex";
 
 export const HomeLayout = styled.div`
-  padding: 2.5% 0 1.3% 0;
+  padding: 2.5% 15% 1.3% 15%;
   ${flex.CENTER};
   background-color: #fbfbfd;
 `;
@@ -35,7 +35,7 @@ export const Title = styled.div`
   color: #12182b;
   color: ${color.black};
   ${font.H2}
-  margin: 1.5% 0 0 0;
+  margin: 3% 0 0 0;
   line-height: normal;
 `;
 
@@ -53,7 +53,8 @@ export const ArrowBox = styled.div`
 `;
 
 export const ArrowImg = styled.img`
-  width: 9%;
-  height: 9%;
+  width: 10%;
+  height: 10%;
+  margin-top: 1%;
   flex-shrink: 0;
 `;
