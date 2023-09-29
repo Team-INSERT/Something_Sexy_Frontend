@@ -4,8 +4,7 @@ import flex from "../../styles/flex";
 import { font } from "../../styles/font";
 
 export const HeaderLayout = styled.div`
-  margin: 1% 0 0 15%;
-  padding-bottom: 1%;
+  padding: 1% 15% 1% 15%;
   display: flex;
 `;
 
@@ -19,38 +18,31 @@ export const Logo = styled.img`
 `;
 
 export const Title = styled.div`
-  color: #12182b;
-  font-family: Pretendard;
   color: ${color.black};
   font: ${font.H4}
   line-height: normal;
-  margin-left: 5%;
+  margin-left: 8%;
 `;
 
 export const HeaderLayoutRightBox = styled.div`
   display: flex;
-  margin-left: 60%;
+  margin-left: 62%;
 `;
 
 export const Input = styled.input`
-  border-radius: 70px;
-  width: 60%;
-  padding: 3.5%;
+  border-radius: 4px;
+  width: 230%;
+  padding: 8%;
   flex-shrink: 0;
+  border: 1.5px solid #ccc;
+  font-size: 8px;
 `;
 
-export const Button = styled.button`
-  margin-left: 10%;
-  width: 35%;
-  background: #4541ff;
-  height: 110%;
-  border: none;
-  flex-shrink: 0;
-  border-radius: 12.5px;
-  color: #fff;
-  font-family: Pretendard;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+export const HeaderSearchImg = styled.img`
+  position: absolute;
+  width: 2%;
+  top: 3%;
+  right: 15.5%;
+  border-left: 3px solid #ccc;
+  padding-left: 0.5%;
 `;

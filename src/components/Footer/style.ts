@@ -6,13 +6,15 @@ import flex from "../../styles/flex";
 export const FooterLayout = styled.div`
   ${flex.CENTER};
   width: 100%;
+  padding: 0 15% 0 15%;
   height: 400px;
   color: ${color.black};
-  background-color: #f5f5f5;
+  background-color: ${color.white};
+  margin-bottom: 5%;
 `;
 
 export const FooterContainer = styled.div`
-  width: 76%;
+  width: 100%;
   height: 60%;
 `;
 
@@ -30,21 +32,29 @@ export const FooterHGroup = styled.hgroup`
 export const FooterSection = styled.section`
   ${flex.COLUMN};
   gap: 2px;
+  margin-top: 2%;
 `;
 
 export const FooterSubTitle = styled.span`
-  ${font.H5};
+  font-size: 20px;
+  font-weight: 520;
   margin-bottom: 3%;
 `;
 
 export const FooterPolicyText = styled.span`
   ${font.p4};
   color: ${color.black};
+  margin: 3% 0 2% 0;
+`;
+
+export const FooterInfoText = styled.span`
+  font-size: 13px;
+  color: ${color.black};
 `;
 
 export const FooterCopyright = styled.span`
-  margin-top: 4%;
-  ${font.p4};
+  margin-top: 1%;
+  ${font.p3};
   color: ${color.black};
 `;
 
