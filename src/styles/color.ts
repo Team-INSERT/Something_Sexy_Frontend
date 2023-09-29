@@ -6,6 +6,7 @@ const color = {
   tertiary: "#303441",
   text: "#797979",
   gray: "#7B7B7B",
+  background: "#fbfbfd",
 };
 
 export default color;
