@@ -5,7 +5,7 @@ import flex from "../../styles/flex";
 
 export const MainLayout = styled.div`
   ${flex.CENTER};
-  background-color: ${color.background};
+  background-color: ${color.light_gray};
   padding: 0 0 15% 0;
 `;
 
