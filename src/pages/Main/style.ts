@@ -48,8 +48,8 @@ export const PostTags = styled.div`
 `;
 
 export const PostTag = styled.div`
-  font-size: 13px;
   ${flex.CENTER};
+  font-size: 13px;
   color: white;
   line-height: normal;
   font-weight: 500;

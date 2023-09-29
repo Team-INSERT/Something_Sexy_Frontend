@@ -6,6 +6,7 @@ import flex from "../../styles/flex";
 export const FooterLayout = styled.div`
   ${flex.CENTER};
   width: 100%;
+  padding: 0 15% 0 15%;
   height: 400px;
   color: ${color.black};
   background-color: ${color.white};
@@ -13,7 +14,7 @@ export const FooterLayout = styled.div`
 `;
 
 export const FooterContainer = styled.div`
-  width: 76%;
+  width: 100%;
   height: 60%;
 `;
 
