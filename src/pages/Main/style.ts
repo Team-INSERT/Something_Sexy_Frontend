@@ -5,8 +5,8 @@ import flex from "../../styles/flex";
 
 export const MainLayout = styled.div`
   ${flex.CENTER};
-  background-color: #fbfbfd;
-  padding: 0 0 5% 0;
+  background-color: ${color.background};
+  padding: 0 0 15% 0;
 `;
 
 export const MainContainer = styled.div`
@@ -17,44 +17,51 @@ export const MainContainer = styled.div`
 export const Main = styled.div`
   display: grid;
   padding: 5% 0 5% 0;
-  gap: 5% 160px;
+  gap: 5% 200px;
   place-items: center;
   grid-template-columns: repeat(2, 1fr); // 반복되는 값을 자동으로
 `;
 export const Post = styled.div`
-  display: flex;
-  flex-direction: column;
+  ${flex.COLUMN};
 `;
 
 export const PostPicture = styled.img`
   border-radius: 15px;
-  width: 95%;
+  width: 100%;
   height: 80%;
+  margin-top: 5%;
 `;
 
 export const PostTitle = styled.div`
-  ${font.H2};
-  padding: 2% 3% 0 3%;
+  ${font.H4};
+  padding: 2% 3% 0 0;
 `;
 
 export const PostSubtitle = styled.div`
-  ${font.H5};
-  color: ${color.content};
-  padding: 1% 3% 2% 3%;
+  ${font.H6};
+  color: #666;
+  padding: 1% 3% 2% 0;
 `;
 
-export const PostButton = styled.button`
+export const PostTags = styled.div`
+  display: flex;
+`;
+
+export const PostTag = styled.div`
   font-size: 13px;
   ${flex.CENTER};
-  color: #7a7d85;
+  color: white;
   line-height: normal;
-  font-weight: 600;
-  width: 10%;
-  height: 3%;
-  padding: 1% 0 1% 0;
-  margin: 0 0 0 2.5%;
+  font-weight: 500;
+  width: 15%;
+  padding: 1%;
+  margin-left: 1%;
   flex-shrink: 0;
   border-radius: 50px;
-  background: #eee;
+  background: #4e78ff;
   border: none;
+
+  &:first-child {
+    margin-left: 0%; /* 첫 번째 자식 빼고 모두 */
+  }
 `;
