@@ -1,5 +1,6 @@
 import * as S from "./style";
 import logo from "../../assets/logo.png";
+import search from "../../assets/search.svg";
 
 function Header() {
   return (
@@ -9,8 +10,12 @@ function Header() {
         <S.Title>INSERT</S.Title>
       </S.HeaderLayoutLeftBox>
       <S.HeaderLayoutRightBox>
-        <S.Input type="search" name="search" placeholder="검색하기..." />
-        <S.Button>로그인</S.Button>
+        <S.Input
+          type="search"
+          name="search"
+          placeholder="검색어를 입력해주세요..."
+        />
+        <S.HeaderSearchImg src={search} />
       </S.HeaderLayoutRightBox>
     </S.HeaderLayout>
   );
