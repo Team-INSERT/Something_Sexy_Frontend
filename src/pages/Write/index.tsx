@@ -9,7 +9,6 @@ import * as S from "./style";
 
 function Content() {
   const router = useParams();
-  console.log(router.id);
 
   // Markdown 내용을 저장하는 content와 제목을 저장하는 title를 선언
   const [content, setContent]: [string, Dispatch<SetStateAction<string>>] =
@@ -27,10 +26,6 @@ function Content() {
       setContent(value);
     }
   };
-  const clickConsole = () => {
-    console.log(title);
-    console.log(content);
-  };
   return (
     <S.ContentLayout>
       <S.Write>
@@ -44,7 +39,7 @@ function Content() {
         <S.TagExplation>#태그를 입력하세요</S.TagExplation>
         <MDEditor value={content} onChange={ChangeContent} height={500} />
       </S.Write>
-      <S.btn onClick={clickConsole} />
+      <S.btn />
     </S.ContentLayout>
   );
 }
