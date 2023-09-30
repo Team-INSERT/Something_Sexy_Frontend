@@ -16,11 +16,11 @@ function Content() {
   const [title, setTitle] = useState("");
 
   // 제목을 변경하는 이벤트 핸들러
-  const changeTitle = (e: ChangeEvent<HTMLInputElement>) => {
+  const handleTitleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setTitle(e.target.value);
   };
   // Markdown 내용을 변경하는 이벤트 핸들러
-  const ChangeContent = (value: string | undefined) => {
+  const handleContentChange = (value?: string) => {
     // value가 문자열타입일 경우에만 content 상태를 업데이트
     if (typeof value === "string") {
       setContent(value);
@@ -31,13 +31,13 @@ function Content() {
       <S.Write>
         <S.InputTitle
           type="text"
-          onChange={changeTitle}
+          onChange={handleTitleChange}
           value={title}
           placeholder="제목을 입력하세요"
         />
         <S.Line />
         <S.TagExplation>#태그를 입력하세요</S.TagExplation>
-        <MDEditor value={content} onChange={ChangeContent} height={500} />
+        <MDEditor value={content} onChange={handleContentChange} height={500} />
       </S.Write>
       <S.btn />
     </S.ContentLayout>
