@@ -19,8 +19,8 @@ function Content() {
     setTitle(e.target.value);
   };
   // Markdown 내용을 변경하는 이벤트 핸들러
-  const handleContentChange = (value: string) => {
-    setContent(value);
+  const handleContentChange = (value?: string) => {
+    setContent(value || "");
   };
   return (
     <S.ContentLayout>
