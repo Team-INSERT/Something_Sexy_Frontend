@@ -11,8 +11,7 @@ function Content() {
   const router = useParams();
 
   // Markdown 내용을 저장하는 content와 제목을 저장하는 title를 선언
-  const [content, setContent]: [string, Dispatch<SetStateAction<string>>] =
-    useState(""); // 타입 명시적으로 지정
+  const [content, setContent] = useState<string>(""); // 타입 명시적으로 지정
   const [title, setTitle] = useState("");
 
   // 제목을 변경하는 이벤트 핸들러
@@ -20,11 +19,8 @@ function Content() {
     setTitle(e.target.value);
   };
   // Markdown 내용을 변경하는 이벤트 핸들러
-  const handleContentChange = (value?: string) => {
-    // value가 문자열타입일 경우에만 content 상태를 업데이트
-    if (typeof value === "string") {
-      setContent(value);
-    }
+  const handleContentChange = (value: string) => {
+    setContent(value);
   };
   return (
     <S.ContentLayout>
