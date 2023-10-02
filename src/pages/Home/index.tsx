@@ -1,5 +1,5 @@
+import background from "assets/background.png";
 import * as S from "./style";
-import background from "../../assets/background.png";
 
 function Home() {
   const { title, subtitle } = {
