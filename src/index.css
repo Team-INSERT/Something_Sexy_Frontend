@@ -4,3 +4,15 @@
   box-sizing: border-box;
   outline: none;
 }
+
+.wmde-markdown {
+  background-color: #fbfbfd !important;
+}
+
+.wmde-markdown > * {
+  border: none !important;
+}
+
+.wmde-markdown a {
+  display: none !important;
+}

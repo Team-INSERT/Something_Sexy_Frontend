@@ -1,3 +1,4 @@
+import Main from "components/Main";
 import background from "assets/background.png";
 import * as S from "./style";
 
@@ -8,15 +9,18 @@ function Home() {
   };
 
   return (
-    <S.HomeLayout>
-      <S.HomeLayoutBox>
-        <S.Background>
-          <S.BackgroundImg src={background} />
-        </S.Background>
-        <S.Title>{title}</S.Title>
-        <S.SubTitle>{subtitle}</S.SubTitle>
-      </S.HomeLayoutBox>
-    </S.HomeLayout>
+    <>
+      <S.HomeLayout>
+        <S.HomeLayoutBox>
+          <S.Background>
+            <S.BackgroundImg src={background} />
+          </S.Background>
+          <S.Title>{title}</S.Title>
+          <S.SubTitle>{subtitle}</S.SubTitle>
+        </S.HomeLayoutBox>
+      </S.HomeLayout>
+      <Main />
+    </>
   );
 }
 export default Home;
