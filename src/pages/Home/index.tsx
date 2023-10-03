@@ -1,6 +1,4 @@
 import Main from "components/Main";
-import Header from "components/Header";
-import Footer from "components/Footer";
 import background from "assets/background.png";
 import * as S from "./style";
 
@@ -12,7 +10,6 @@ function Home() {
 
   return (
     <>
-      <Header />
       <S.HomeLayout>
         <S.HomeLayoutBox>
           <S.Background>
@@ -23,7 +20,6 @@ function Home() {
         </S.HomeLayoutBox>
       </S.HomeLayout>
       <Main />
-      <Footer />
     </>
   );
 }

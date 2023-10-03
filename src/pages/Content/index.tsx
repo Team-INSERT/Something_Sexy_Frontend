@@ -1,7 +1,5 @@
 import { useParams } from "react-router-dom";
 import MDviewer from "@uiw/react-markdown-preview";
-import Header from "components/Header";
-import Footer from "components/Footer";
 import thunbnail from "assets/thumbnail.png";
 import * as S from "./style";
 
@@ -91,32 +89,28 @@ function Content() {
   `;
 
   return (
-    <>
-      <Header />
-      <S.Layout>
-        <S.Title>{title}</S.Title>
-        <S.DetailLayout>
-          <S.Detail>
-            {author} · {date}
-          </S.Detail>
-          <div>수정</div>
-          <div>삭제</div>
-        </S.DetailLayout>
-        <S.TagLayout>
-          {tags.map((tag, tagId) => (
-            <S.Tag key={tagId}>{tag}</S.Tag>
-          ))}
-        </S.TagLayout>
-        <S.Image src={image} alt="썸네일" />
-        <MDviewer
-          source={content}
-          wrapperElement={{
-            "data-color-mode": "light",
-          }}
-        />
-      </S.Layout>
-      <Footer />
-    </>
+    <S.Layout>
+      <S.Title>{title}</S.Title>
+      <S.DetailLayout>
+        <S.Detail>
+          {author} · {date}
+        </S.Detail>
+        <div>수정</div>
+        <div>삭제</div>
+      </S.DetailLayout>
+      <S.TagLayout>
+        {tags.map((tag, tagId) => (
+          <S.Tag key={tagId}>{tag}</S.Tag>
+        ))}
+      </S.TagLayout>
+      <S.Image src={image} alt="썸네일" />
+      <MDviewer
+        source={content}
+        wrapperElement={{
+          "data-color-mode": "light",
+        }}
+      />
+    </S.Layout>
   );
 }
 
