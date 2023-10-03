@@ -1,3 +1,6 @@
+import Main from "components/Main";
+import Header from "components/Header";
+import Footer from "components/Footer";
 import background from "assets/background.png";
 import * as S from "./style";
 
@@ -8,15 +11,20 @@ function Home() {
   };
 
   return (
-    <S.HomeLayout>
-      <S.HomeLayoutBox>
-        <S.Background>
-          <S.BackgroundImg src={background} />
-        </S.Background>
-        <S.Title>{title}</S.Title>
-        <S.SubTitle>{subtitle}</S.SubTitle>
-      </S.HomeLayoutBox>
-    </S.HomeLayout>
+    <>
+      <Header />
+      <S.HomeLayout>
+        <S.HomeLayoutBox>
+          <S.Background>
+            <S.BackgroundImg src={background} />
+          </S.Background>
+          <S.Title>{title}</S.Title>
+          <S.SubTitle>{subtitle}</S.SubTitle>
+        </S.HomeLayoutBox>
+      </S.HomeLayout>
+      <Main />
+      <Footer />
+    </>
   );
 }
 export default Home;
