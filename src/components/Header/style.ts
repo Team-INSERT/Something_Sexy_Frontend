@@ -6,6 +6,7 @@ import { font } from "styles/font";
 export const HeaderLayout = styled.div`
   padding: 1% 15% 1% 15%;
   display: flex;
+  align-items: center;
 `;
 
 export const HeaderLayoutLeftBox = styled.div`
@@ -26,10 +27,17 @@ export const Title = styled.div`
 
 export const HeaderLayoutRightBox = styled.div`
   display: flex;
-  margin-left: 62%;
+  align-items: center;
+  margin-left: 57%;
+`;
+
+export const InputBox = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
 export const Input = styled.input`
+  display: flex;
   border-radius: 4px;
   width: 230%;
   padding: 8%;
@@ -39,10 +47,9 @@ export const Input = styled.input`
 `;
 
 export const HeaderSearchImg = styled.img`
-  position: absolute;
-  width: 2%;
-  top: 3%;
-  right: 15.5%;
+  display: flex;
+  align-items: center;
   border-left: 3px solid #ccc;
-  padding-left: 0.5%;
+  padding-left: 3%;
+  margin-left: -25%;
 `;
