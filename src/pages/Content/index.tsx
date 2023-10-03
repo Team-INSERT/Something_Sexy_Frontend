@@ -107,7 +107,7 @@ function Content() {
             <S.Tag key={tagId}>{tag}</S.Tag>
           ))}
         </S.TagLayout>
-        <S.Image src={image} />
+        <S.Image src={image} alt="썸네일" />
         <MDviewer
           source={content}
           wrapperElement={{
