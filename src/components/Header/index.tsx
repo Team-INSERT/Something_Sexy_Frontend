@@ -1,6 +1,6 @@
+import logo from "assets/logo.png";
+import search from "assets/search.svg";
 import * as S from "./style";
-import logo from "../../assets/logo.png";
-import search from "../../assets/search.svg";
 
 function Header() {
   return (

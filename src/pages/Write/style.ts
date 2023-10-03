@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import flex from "../../styles/flex";
-import color from "../../styles/color";
-import { font } from "../../styles/font";
+import flex from "styles/flex";
+import color from "styles/color";
+import { font } from "styles/font";
 
 export const ContentLayout = styled.div`
   ${flex.COLUMN}

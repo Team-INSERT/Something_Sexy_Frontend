@@ -1,5 +1,5 @@
+import postImg from "assets/post.svg";
 import * as S from "./style";
-import postImg from "../../assets/post.svg";
 
 function Main() {
   const post = [

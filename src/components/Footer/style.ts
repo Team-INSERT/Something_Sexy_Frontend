@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { font } from "../../styles/font";
-import color from "../../styles/color";
-import flex from "../../styles/flex";
+import { font } from "styles/font";
+import color from "styles/color";
+import flex from "styles/flex";
 
 export const FooterLayout = styled.div`
   ${flex.CENTER};
