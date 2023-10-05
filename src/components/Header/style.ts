@@ -2,15 +2,20 @@ import styled from "styled-components";
 import color from "styles/color";
 import flex from "styles/flex";
 import { font } from "styles/font";
+import { Link } from "react-router-dom";
 
 export const HeaderLayout = styled.div`
   padding: 1% 15% 1% 15%;
   display: flex;
   align-items: center;
+  background-color: ${color.white};
+  position: sticky;
+  top: 0%;
 `;
 
-export const HeaderLayoutLeftBox = styled.div`
+export const HeaderLayoutLeftBox = styled(Link)`
   ${flex.CENTER};
+  text-decoration: none;
 `;
 
 export const Logo = styled.img`
