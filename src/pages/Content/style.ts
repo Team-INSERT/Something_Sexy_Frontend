@@ -18,7 +18,7 @@ export const DetailLayout = styled.div`
 
 export const Detail = styled.div`
   margin-bottom: 1%;
-  flex-basis: 90%;
+  flex-basis: 87.5%;
 `;
 
 export const TagLayout = styled.div`
