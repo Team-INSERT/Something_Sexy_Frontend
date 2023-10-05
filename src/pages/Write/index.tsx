@@ -47,7 +47,7 @@ function Write() {
         <MDEditor
           value={content}
           onChange={(val) => setContent(val || "")}
-          height="150vh"
+          height="80vh"
           data-color-mode="light"
         />
       </S.Write>
