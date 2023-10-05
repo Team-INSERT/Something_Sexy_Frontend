@@ -1,20 +1,17 @@
-import { useParams } from "react-router-dom";
 import { useState } from "react";
 import MDEditor from "@uiw/react-md-editor";
 import * as S from "./style";
 
 function Write() {
-  const router = useParams();
-
   const [content, setContent] = useState("");
   const [title, setTitle] = useState("");
-  const [tag, setTag] = useState("");
+  const [inputTag, setInputTag] = useState("");
   const [tags, setTags] = useState<Array<string>>([]);
 
   const handleOnKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
-      setTags([...tags, tag]);
-      setTag("");
+      setTags([...tags, inputTag]);
+      setInputTag("");
     }
   };
 
@@ -38,8 +35,8 @@ function Write() {
           ))}
           <S.InputTag
             type="text"
-            onChange={(e) => setTag(e.target.value)}
-            value={tag}
+            onChange={(e) => setInputTag(e.target.value)}
+            value={inputTag}
             placeholder="태그를 입력하세요"
             onKeyUp={handleOnKeyPress}
           />
@@ -47,7 +44,7 @@ function Write() {
         <MDEditor
           value={content}
           onChange={(val) => setContent(val || "")}
-          height="80vh"
+          height="65vh"
           data-color-mode="light"
         />
       </S.Write>
