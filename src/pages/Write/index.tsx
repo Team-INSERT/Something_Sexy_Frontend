@@ -3,12 +3,25 @@ import { useState } from "react";
 import MDEditor from "@uiw/react-md-editor";
 import * as S from "./style";
 
-function Content() {
+function Write() {
   const router = useParams();
 
-  // Markdown 내용을 저장하는 content와 제목을 저장하는 title를 선언
   const [content, setContent] = useState("");
   const [title, setTitle] = useState("");
+  const [tag, setTag] = useState("");
+  const [tags, setTags] = useState<Array<string>>([]);
+
+  const handleOnKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") {
+      setTags([...tags, tag]);
+      setTag("");
+    }
+  };
+
+  const handleDelete = (t: string) => {
+    setTags(tags.filter((x) => x !== t));
+  };
+
   return (
     <S.ContentLayout>
       <S.Write>
@@ -19,7 +32,18 @@ function Content() {
           placeholder="제목을 입력하세요"
         />
         <S.Line />
-        <S.TagExplation>#태그를 입력하세요</S.TagExplation>
+        <S.CreateTag>
+          {tags.map((t) => (
+            <S.Tag onClick={() => handleDelete(t)}>{t}</S.Tag>
+          ))}
+          <S.InputTag
+            type="text"
+            onChange={(e) => setTag(e.target.value)}
+            value={tag}
+            placeholder="태그를 입력하세요"
+            onKeyUp={handleOnKeyPress}
+          />
+        </S.CreateTag>
         <MDEditor
           value={content}
           onChange={(val) => setContent(val || "")}
@@ -32,4 +56,4 @@ function Content() {
   );
 }
 
-export default Content;
+export default Write;
