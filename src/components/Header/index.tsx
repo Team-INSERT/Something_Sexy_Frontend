@@ -5,7 +5,7 @@ import * as S from "./style";
 function Header() {
   return (
     <S.HeaderLayout>
-      <S.HeaderLayoutLeftBox>
+      <S.HeaderLayoutLeftBox to="/">
         <S.Logo src={logo} />
         <S.Title>INSERT</S.Title>
       </S.HeaderLayoutLeftBox>
