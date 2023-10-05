@@ -7,10 +7,14 @@ export const HeaderLayout = styled.div`
   padding: 1% 15% 1% 15%;
   display: flex;
   align-items: center;
+  background-color: ${color.white};
+  position: sticky;
+  top: 0%;
 `;
 
 export const HeaderLayoutLeftBox = styled.div`
   ${flex.CENTER};
+  cursor: pointer;
 `;
 
 export const Logo = styled.img`
