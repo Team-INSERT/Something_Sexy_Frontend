@@ -9,14 +9,10 @@ function Write() {
   const [tags, setTags] = useState<Array<string>>([]);
 
   const handleOnKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === "Enter") {
+    if (e.key === "Enter" && inputTag !== "") {
       setTags([...tags, inputTag]);
       setInputTag("");
     }
-  };
-
-  const handleDelete = (t: string) => {
-    setTags(tags.filter((x) => x !== t));
   };
 
   return (
@@ -31,7 +27,9 @@ function Write() {
         <S.Line />
         <S.CreateTag>
           {tags.map((t) => (
-            <S.Tag onClick={() => handleDelete(t)}>{t}</S.Tag>
+            <S.Tag onClick={() => setTags(tags.filter((x) => x !== t))}>
+              {t}
+            </S.Tag>
           ))}
           <S.InputTag
             type="text"
