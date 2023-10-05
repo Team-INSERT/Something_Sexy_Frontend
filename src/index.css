@@ -5,11 +5,12 @@
   outline: none;
 }
 
-.wmde-markdown {
+.wmde-markdown,
+.w-md-editor-preview {
   background-color: #fbfbfd !important;
 }
 
-.wmde-markdown > * {
+.wmde-markdown>* {
   border: none !important;
 }
 
