@@ -24,6 +24,7 @@ export const InputTag = styled.input`
   border: none;
   color: ${color.gray};
   ${font.btn2};
+  width: 100%;
 `;
 
 export const InputTitle = styled.input`
