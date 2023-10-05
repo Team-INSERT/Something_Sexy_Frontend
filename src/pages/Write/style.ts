@@ -19,14 +19,11 @@ export const Line = styled.div`
   border-bottom: 2px solid ${color.content};
 `;
 
-export const TagExplation = styled.div`
+export const InputTag = styled.input`
   padding: 1% 0 1% 1%;
+  border: none;
   color: ${color.gray};
   ${font.btn2};
-`;
-
-export const View = styled.div`
-  ${flex.COLUMN};
   width: 100%;
 `;
 
@@ -51,4 +48,22 @@ export const btn = styled.button`
     cursor: pointer;
   }
   border: none;
+`;
+
+export const CreateTag = styled.div`
+  display: flex;
+`;
+
+export const Tag = styled.button`
+  background-color: #4e78ff;
+  ${font.btn2}
+  color: white;
+  width: fit-content;
+  padding: 6px 8px;
+  border-radius: 15px;
+  border: none;
+  margin: 0.6% 0 0.6% 0.6%;
+  &:hover {
+    cursor: pointer;
+  }
 `;

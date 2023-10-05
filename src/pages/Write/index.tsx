@@ -1,43 +1,54 @@
-/* eslint-disable import/no-extraneous-dependencies */
-/* eslint-disable no-console */
-import { useParams } from "react-router-dom";
-import { ChangeEvent, Dispatch, SetStateAction, useState } from "react";
+import { useState } from "react";
 import MDEditor from "@uiw/react-md-editor";
-import "@uiw/react-md-editor/markdown-editor.css";
-import "@uiw/react-markdown-preview/markdown.css";
 import * as S from "./style";
 
-function Content() {
-  const router = useParams();
-
-  // Markdown 내용을 저장하는 content와 제목을 저장하는 title를 선언
-  const [content, setContent] = useState<string>(""); // 타입 명시적으로 지정
+function Write() {
+  const [content, setContent] = useState("");
   const [title, setTitle] = useState("");
+  const [inputTag, setInputTag] = useState("");
+  const [tags, setTags] = useState<Array<string>>([]);
 
-  // 제목을 변경하는 이벤트 핸들러
-  const handleTitleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setTitle(e.target.value);
+  const handleOnKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter" && inputTag !== "") {
+      setTags([...tags, inputTag]);
+      setInputTag("");
+    }
   };
-  // Markdown 내용을 변경하는 이벤트 핸들러
-  const handleContentChange = (value?: string) => {
-    setContent(value || "");
-  };
+
   return (
     <S.ContentLayout>
       <S.Write>
         <S.InputTitle
           type="text"
-          onChange={handleTitleChange}
+          onChange={(e) => setTitle(e.target.value)}
           value={title}
           placeholder="제목을 입력하세요"
         />
         <S.Line />
-        <S.TagExplation>#태그를 입력하세요</S.TagExplation>
-        <MDEditor value={content} onChange={handleContentChange} height={500} />
+        <S.CreateTag>
+          {tags.map((t) => (
+            <S.Tag onClick={() => setTags(tags.filter((x) => x !== t))}>
+              {t}
+            </S.Tag>
+          ))}
+          <S.InputTag
+            type="text"
+            onChange={(e) => setInputTag(e.target.value)}
+            value={inputTag}
+            placeholder="태그를 입력하세요"
+            onKeyUp={handleOnKeyPress}
+          />
+        </S.CreateTag>
+        <MDEditor
+          value={content}
+          onChange={(val) => setContent(val || "")}
+          height="65vh"
+          data-color-mode="light"
+        />
       </S.Write>
       <S.btn />
     </S.ContentLayout>
   );
 }
 
-export default Content;
+export default Write;
