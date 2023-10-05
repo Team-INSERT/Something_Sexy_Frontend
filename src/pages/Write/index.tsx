@@ -1,5 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
-/* eslint-disable no-console */
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 import MDEditor from "@uiw/react-md-editor";
@@ -26,6 +24,7 @@ function Content() {
           value={content}
           onChange={(val) => setContent(val || "")}
           height="150vh"
+          data-color-mode="light"
         />
       </S.Write>
       <S.btn />
